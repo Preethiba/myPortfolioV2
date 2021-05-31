@@ -1,0 +1,156 @@
+@media screen and (max-width: 576px) {
+  .fa-arrow:before{
+  	content: "\f063";
+  }
+  i{
+  	padding: 50px;
+  }
+  #navList li{
+	display: block;
+	list-style-type: none;
+	padding: 10px;
+  }
+  
+}
+@media screen and (min-width: 576px) {
+  .fa-arrow:before{
+  	content: "\f061";
+  }
+  #navList li{
+	display: inline;
+	padding: 10px;
+  }
+}
+#root{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#navDiv{
+	padding-top: 20px;
+	background-color: #F64C72;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#navList li a {
+	text-decoration: none;
+	color: white;
+}
+#navList li:hover{
+	opacity: 0.8;
+	cursor: pointer;
+	border-bottom: 4px solid white;
+}
+
+#homeDiv{
+	height: 600;
+	width: 100%;
+	background-color: #2F2FA2;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#homeImg{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 40%;
+	border-radius: 50%;
+	border: 4px solid white;
+	padding: 10px;
+}
+
+#homeContent{
+	position: relative;
+	text-align: center;
+	top: 45%;
+	color: white;
+	font-size: 20px;
+	font-family: 'Londrina Solid', cursive;
+}
+
+#educationDiv{
+	width: 100%;
+	background-color: #FFFAFA;
+	color: black;
+	font-family: 'Londrina Solid', cursive;
+	padding: 30px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#educationContent{
+	padding-top: 50px;
+	padding-left: 70px;
+	background-color: #242582;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	color: white;
+}
+#projectsDiv{
+	width: 100%;
+	background-color: #242582;
+	color: white;
+	font-family: 'Londrina Solid', cursive !important;
+}
+
+#experienceDiv{
+	width: 100%;
+	background-color: #553D67;
+}
+
+#contactDiv{
+	width: 100%;
+	background-color: #99738E;
+}
+
+i{
+	font-size: 50px;
+}
+
+.journey{
+	width: 180px;
+	height: 150px;
+	border: 1px solid black;
+	border-radius: 20%;
+	background-color: #D0D0D0;
+	margin-bottom: 20px;
+}
+
+.journey img{
+	transform: rotate(20deg);
+	border-radius: 20%;
+}
+
+.percent{
+	font-size: 20px;
+}
+
+.card{
+	height: 400px;
+	width: 320px;
+	background-color: #FFF5EE;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	overflow-y: scroll;
+	margin: 10px;
+}
+
+#projectsContent{
+	padding-bottom: 30px;
+	color: black;
+	font-family: 'Londrina Solid', cursive !important;
+}
+
+.card-heading{
+	text-align: center;
+	padding: 5px;
+	font-size: 20px;
+}
+
+.card-image{
+	padding: 10px;
+}
+
+.card-content{
+	padding: 10px;
+}
+#project-end{
+	text-align: center;
+	font-size: 30;
+}
