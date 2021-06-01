@@ -302,35 +302,16 @@
 .icons:hover{
 	text-decoration: none;
 }
-/* IPhone */
-@media screen and (max-device-width: 768px) {
-  .fa-arrow:before{
-	content: "\f063";
-  }
-  .arrow{
-  	padding: 50px;
-  }
-  #mobileNav{
-  	display: block !important;
-  }
+
+/* Laptop/Desktop */
+@media screen and (max-device-width: 1600px)  {
   #navList li{
-	list-style-type: none;
+	display: inline;
 	padding: 10px;
   }
-  #navList{
-  	display: none;
-  }
-  #educationContent .alignleft{
-	position: relative;
-	left: 10%;
-  }
   .grid-container{
-	grid-template-columns: auto auto;
-	grid-gap:5px 5px;
-  }
-  .flex-container{
-  	flex-direction: column;
-  	text-align: center;
+	grid-template-columns: auto auto auto auto auto auto;
+	grid-gap:10px 10px;
   }
 }
 /* Tab */
@@ -355,17 +336,6 @@
   }
   .grid-container{
 	grid-template-columns: auto auto auto;
-	grid-gap:10px 10px;
-  }
-}
-/* Laptop/Desktop */
-@media screen and (max-device-width: 1600px)  {
-  #navList li{
-	display: inline;
-	padding: 10px;
-  }
-  .grid-container{
-	grid-template-columns: auto auto auto auto auto auto;
 	grid-gap:10px 10px;
   }
 }
@@ -399,5 +369,36 @@
   /* Make all right containerboxs behave like the left ones */
   .right {
   left: 0%;
+  }
+}
+/* IPhone */
+@media screen and (max-device-width: 768px) {
+  .fa-arrow:before{
+	content: "\f063";
+  }
+  .arrow{
+  	padding: 50px;
+  }
+  #mobileNav{
+  	display: block !important;
+  }
+  #navList li{
+	list-style-type: none;
+	padding: 10px;
+  }
+  #navList{
+  	display: none;
+  }
+  #educationContent .alignleft{
+	position: relative;
+	left: 10%;
+  }
+  .grid-container{
+	grid-template-columns: auto auto;
+	grid-gap:5px 5px;
+  }
+  .flex-container{
+  	flex-direction: column;
+  	text-align: center;
   }
 }
