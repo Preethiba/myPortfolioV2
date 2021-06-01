@@ -8,6 +8,11 @@
 #navList{
 	padding-top: 20px;
 }
+#navList{
+	display: inline;
+	list-style-type: none;
+	padding: 10px;
+}
 #navList li a {
 	text-decoration: none;
 	color: white;
@@ -164,7 +169,7 @@
 }
 
 .card-image{
-	width: 100%;
+	width: 80%;
 	height: 250px;
 	padding: 10px;
 }
@@ -299,17 +304,11 @@
 	text-decoration: none;
 }
 
-/* Laptop/Desktop */
-@media screen and (max-device-width: 1600px)  {
-  #navList li{
-	display: inline;
-	padding: 10px;
-  }
-  .grid-container{
+.grid-container{
 	grid-template-columns: auto auto auto auto auto auto;
 	grid-gap:10px 10px;
-  }
 }
+
 /* Tab */
 @media screen and (max-device-width: 1024px)  {
   .fa-arrow:before{
