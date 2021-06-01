@@ -1,25 +1,5 @@
-@media screen and (max-width: 576px) {
-  .fa-arrow:before{
-  	content: "\f063";
-  }
-  i{
-  	padding: 50px;
-  }
-  #navList li{
-	display: block;
-	list-style-type: none;
-	padding: 10px;
-  }
-  
-}
-@media screen and (min-width: 576px) {
-  .fa-arrow:before{
-  	content: "\f061";
-  }
-  #navList li{
-	display: inline;
-	padding: 10px;
-  }
+* {
+  box-sizing: border-box;
 }
 #root{
 	margin-left: 10px;
@@ -27,7 +7,7 @@
 }
 #navDiv{
 	padding-top: 20px;
-	background-color: #F64C72;
+	background-color: grey;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #navList li a {
@@ -39,11 +19,14 @@
 	cursor: pointer;
 	border-bottom: 4px solid white;
 }
+#navList li i {
+	padding: 5px;
+}
 
 #homeDiv{
 	height: 600;
 	width: 100%;
-	background-color: #2F2FA2;
+	background-color: #281E5D;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -52,7 +35,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	top: 40%;
+	top: 30%;
 	border-radius: 50%;
 	border: 4px solid white;
 	padding: 10px;
@@ -61,7 +44,7 @@
 #homeContent{
 	position: relative;
 	text-align: center;
-	top: 45%;
+	top: 35%;
 	color: white;
 	font-size: 20px;
 	font-family: 'Londrina Solid', cursive;
@@ -69,20 +52,18 @@
 
 #educationDiv{
 	width: 100%;
-	background-color: #FFFAFA;
-	color: black;
+	background-color: #2C3E4C;
+	color: white;
 	font-family: 'Londrina Solid', cursive;
-	padding: 30px;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	padding: 10px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
 }
 
 #educationContent{
-	padding-top: 50px;
-	padding-left: 70px;
-	background-color: #242582;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	color: white;
+	padding-top: 30px;
 }
+
+
 #projectsDiv{
 	width: 100%;
 	background-color: #242582;
@@ -90,17 +71,12 @@
 	font-family: 'Londrina Solid', cursive !important;
 }
 
-#experienceDiv{
-	width: 100%;
-	background-color: #553D67;
-}
-
 #contactDiv{
 	width: 100%;
-	background-color: #99738E;
+	background-color: #FAEBD7;
 }
 
-i{
+.arrow{
 	font-size: 50px;
 }
 
@@ -122,12 +98,43 @@ i{
 	font-size: 20px;
 }
 
+#skillsDiv{
+	background-color: #016064;
+	color: white;
+	font-family: 'Londrina Solid', cursive;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap:10px 10px;
+	padding-bottom: 20px;
+}
+
+.grid-item{
+	height: 100px;
+	width: 100px;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	text-align: center;
+}
+
+.grid-item i{
+	font-size: 50px;
+	color: black;
+	opacity: 0.8;
+}
+
+.grid-item p{
+	font-size: 14px;
+	color: black;
+	opacity: 0.8;
+}
+
 .card{
-	height: 400px;
-	width: 320px;
 	background-color: #FFF5EE;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	overflow-y: scroll;
 	margin: 10px;
 }
 
@@ -144,13 +151,230 @@ i{
 }
 
 .card-image{
+	width: 100%;
+	height: 250px;
 	padding: 10px;
 }
 
 .card-content{
 	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
 }
-#project-end{
-	text-align: center;
-	font-size: 30;
+
+#experienceDiv{
+	background-color: #50AEB5;
+	color: black;
+	font-family: 'Londrina Solid', cursive;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.containerbox {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.containerbox::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the containerbox to the left */
+.left {
+  left: 0;
+}
+
+/* Place the containerbox to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left containerbox (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right containerbox (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containerboxs on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+.fa-arrow:before{
+	content: "\f061";
+}
+
+#contactDiv h2{
+	font-family: 'Londrina Solid', cursive !important;
+}
+
+.flex-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.icons{
+	text-decoration: none;
+	margin: 10px;
+  	padding: 20px;
+  	font-size: 50px;
+  	opacity: 0.8;
+}
+
+.icons:hover{
+	text-decoration: none;
+}
+/* IPhone */
+@media screen and (max-device-width: 768px) {
+  .fa-arrow:before{
+	content: "\f063";
+  }
+  .arrow{
+  	padding: 50px;
+  }
+  #navList li{
+	display: block;
+	list-style-type: none;
+	padding: 10px;
+  }
+  #educationContent .alignleft{
+	position: relative;
+	left: 10%;
+  }
+  .grid-container{
+	grid-template-columns: auto auto;
+	grid-gap:5px 5px;
+  }
+  .flex-container{
+  	flex-direction: column;
+  	text-align: center;
+  }
+}
+/* Tab */
+@media screen  and (min-device-width: 768px) 
+  and (max-device-width: 1024px)  {
+  .fa-arrow:before{
+	content: "\f063";
+  }
+  .arrow{
+  	padding: 50px;
+  }
+  #navList li{
+	display: block;
+	list-style-type: none;
+	padding: 10px;
+  }
+  #educationContent .alignleft{
+	position: relative;
+	left: 20%;
+  }
+  .grid-container{
+	grid-template-columns: auto auto auto;
+	grid-gap:10px 10px;
+  }
+}
+/* Laptop/Desktop */
+@media screen and (min-device-width: 1200px) 
+  and (max-device-width: 1600px)  {
+  #navList li{
+	display: inline;
+	padding: 10px;
+  }
+  .grid-container{
+	grid-template-columns: auto auto auto auto auto auto;
+	grid-gap:10px 10px;
+  }
+}
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containerboxs */
+  .containerbox {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .containerbox::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containerboxs behave like the left ones */
+  .right {
+  left: 0%;
+  }
 }
