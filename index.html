@@ -11,6 +11,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style/style.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -23,22 +24,27 @@
     <div class="container-fluid" id="navDiv">
       <nav id="navigation">
         <ul id="navList">
-          <li><a href="#homeDiv"><b>Home</b></a></li>
-          <li><a href="#educationDiv"><b>Education</b></a></li>
-          <li><a href="#projectsDiv"><b>Projects</b></a></li>
-          <li><a href="#experienceDiv"><b>Experience</b></a></li>
-          <li><a href="#contactDiv"><b>Contact</b></a></li>
+          <li><a href="#homeDiv"><b><i class="fas fa-home"></i>Home</b></a></li>
+          <li><a href="#educationDiv"><b><i class="fas fa-university"></i>Education</b></a></li>
+          <li><a href="#skillsDiv"><b><i class="fas fa-building"></i>Skills</b></a></li>
+          <li><a href="#projectsDiv"><b><i class="fas fa-file-code"></i>Projects</b></a></li>
+          <li><a href="#experienceDiv"><b><i class="fas fa-building"></i>Experience</b></a></li>
+          <li><a href="#contactDiv"><b><i class="fas fa-address-book"></i>Contact</b></a></li>
         </ul>
       </nav>
     </div>
     <div class="container-fluid rootDivs" id ="homeDiv">
       <img src="./images/me.jpg" height="200" width="200" id="homeImg" class="animate__animated animate__bounce"/>
-      <p id="homeContent">Preethiba Babu, a budding developer!</p>
+      <p id="homeContent">Preethiba Babu, a budding developer!<br>
+      Coldfusion | HTML | CSS | JS | AJAX
+      </p>
     </div>
     <div class="container-fluid rootDivs" id="educationDiv">
       <h2 style="text-align: center;">Education Journey</h2>
       <div class="row" id="educationContent">
-        <div class="col-md-3 animate__animated animate__swing">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-3 animate__animated animate__swing alignleft">
           <div class="journey">
               <img src="./images/sslc.jpg" height="150" width="180">
           </div>
@@ -46,10 +52,10 @@
           <p class="School">SSLC</p>
           <span class="percent">98%</span>
         </div>
-        <div class="col-md-1">
-          <i class="fas fa-arrow"></i>
+        <div class="col-md-1 alignleft">
+          <i class="fas fa-arrow arrow"></i>
         </div>
-        <div class="col-md-3 animate__animated animate__swing">
+        <div class="col-md-3 animate__animated animate__swing alignleft">
           <div class="journey">
             <img src="./images/sslc.jpg" height="150" width="180">
           </div>
@@ -57,16 +63,45 @@
           <p class="School">HSC</p>
           <span class="percent">95%</span>
         </div>
-        <div class="col-md-1">
-          <i class="fas fa-arrow"></i>
+        <div class="col-md-1 alignleft">
+          <i class="fas fa-arrow arrow"></i>
         </div>
-        <div class="col-md-4 animate__animated animate__swing">
+        <div class="col-md-3 animate__animated animate__swing alignleft">
           <div class="journey">
             <img src="./images/clg.jpg" height="150" width="180">
           </div>
           <p>Hindusthan College of Engineering and Technology</p>
           <p class="School">BE(CSE)</p>
           <span class="percent">9.2 CGPA</span>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid rootDivs" id="skillsDiv">
+      <h2 style="text-align: center;">Skills</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <i class="fab fa-html5"></i>
+          <p>Intermediate</p>
+        </div>
+        <div class="grid-item">
+          <i class="fab fa-css3-alt"></i>
+          <p>Intermediate</p>
+        </div>
+        <div class="grid-item">
+          <i class="fab fa-js"></i>
+          <p>Intermediate</p>
+        </div>
+        <div class="grid-item">
+          <p>ColdFusion<br>
+             Intermediate</p>
+        </div>
+        <div class="grid-item">
+          <i class="fab fa-react"></i>
+          <p>Beginner</p>
+        </div>
+        <div class="grid-item">
+          <i class="fas fa-database"></i>
+          <p>SQL - Intermediate</p>
         </div>
       </div>
     </div>
@@ -78,9 +113,9 @@
             <div class="card-heading">
               Simple Todo Application
             </div>
-            <img src="./images/todo.jpg" width="320" height="220" class="card-image"> 
+            <img src="./images/todo.jpg" class="card-image"> 
             <div class="card-content">
-              Technology Used : HTML, CSS, JS
+              <b>FrontEnd:</b> HTML, CSS, JS.<br>
               A simple application to create our todo list.
             </div>
           </div>
@@ -90,9 +125,9 @@
             <div class="card-heading">
               Simple Book Application
             </div>
-            <img src="./images/booksapp.jpg" width="320" height="220" class="card-image"> 
+            <img src="./images/booksapp.jpg" class="card-image"> 
             <div class="card-content">
-              Technology Used : HTML, CSS, JS
+              <b>FrontEnd:</b> HTML, CSS, JS.<br>
               A simple application which adds or deletes the book details.
             </div>
           </div>
@@ -102,9 +137,9 @@
             <div class="card-heading">
               Weather Forecast Application
             </div>
-            <img src="./images/weather.jpg" width="320" height="220" class="card-image"> 
+            <img src="./images/weather.jpg" class="card-image"> 
             <div class="card-content">
-              Technology Used : HTML, CSS, React(ReactSparklines(for chart), Axios(RestCalls)), Redux(ReduxPromise), Lodash
+              <b>FrontEnd:</b> HTML, CSS, React( ReactSparklines(for chart), Axios(RestCalls)), Redux(ReduxPromise), Lodash.<br>
               This app enables the users to look over the details about temperature, humidity and pressure in cities all over India in a chart format.
             </div>
           </div>
@@ -116,29 +151,14 @@
             <div class="card-heading">
               Blogpost Application
             </div>
-            <video width="320" height="220" controls class="card-image">
+            <video controls class="card-image">
                 <source src="./videos/blogsapp.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="card-content">
-              Technology Used : HTML, CSS, React(ReactRouter(for navigation), Axios(RestCalls)), Redux(ReduxPromise, ReduxForm), Lodash
-              Backend Storage : reduxblog.herokuapp.com
+              <b>FrontEnd:</b>HTML, CSS, React(ReactRouter(for navigation), Axios(RestCalls)), Redux(ReduxPromise, ReduxForm), Lodash.<br>
+              <b>Backend:</b> reduxblog.herokuapp.com.<br>
               This app enables the users to add, view and delete the posts.
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-1">
-          <div class="card">
-            <div class="card-heading">
-              Garbage Management System
-            </div>
-            <video width="320" height="220" controls class="card-image">
-                <source src="./videos/SmartDustbin.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="card-content">
-              Technology Used : Arduino, C
-              This app enables the human-sensed dustbin opening and the benefit for authorities to receive a warning message whenever the garbage is filled over the threshold limit.
             </div>
           </div>
         </div>
@@ -147,23 +167,65 @@
             <div class="card-heading">
               Streaming Application
             </div>
-            <video width="320" height="220" controls class="card-image">
+            <video controls class="card-image">
                 <source src="./videos/videostream.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="card-content">
-              Technology Used : HTML, CSS, React(ReactRouter(for navigation), Axios(RestCalls)), Redux(ReduxThunk,ReduxForm), Lodash
-              Backend Storage : Firebase
+              <b>FrontEnd:</b> HTML, CSS, React(ReactRouter(for navigation), Axios(RestCalls)), Redux(ReduxThunk,ReduxForm), Lodash.<br>
+              <b>Backend:</b> Firebase.<br>
               This app enables the users to create, edit and delete a stream with gmail-based authentication.
             </div>
           </div>
         </div>
+        <div class="col-md-4 col-sm-1">
+          <div class="card">
+            <div class="card-heading">
+              Garbage Management System
+            </div>
+            <video controls class="card-image">
+                <source src="./videos/SmartDustbin.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="card-content">
+              <b>Technology Used:</b> Arduino, C.<br>
+              This app enables the human-sensed dustbin opening and the benefit for authorities to receive a warning message whenever the garbage is filled over the threshold limit.
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="project-end">All the application code are available at <a href="https://github.com/Preethiba?tab=repositories">Github</a></div>
+<!--       <div id="project-end">All the application code are available at <a href="https://github.com/Preethiba?tab=repositories">Github</a></div> -->
     </div>
     <div class="container-fluid rootDivs" id="experienceDiv">
+      <h2 style="text-align: center;">Experience</h2>
+      <div class="timeline">
+        <div class="containerbox left">
+          <div class="content">
+            <h2>Oct 2020 - Present</h2>
+            <p>SDE Trainee - Ducen IT Pvt Ltd.</p>
+          </div>
+        </div>
+        <div class="containerbox right">
+          <div class="content">
+            <h2>July 2019 - Oct 2020</h2>
+             <p>SDE Intern - Ducen IT Pvt Ltd.</p>
+          </div>
+        </div>
+        <div class="containerbox left">
+          <div class="content">
+            <h2>Nov 2018</h2>
+            <p>Web Development Intern - Accent Technosoft Pvt Ltd.</p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="container-fluid rootDivs" id="contactDiv">
+      <h2 style="text-align: center;">Reach me out through</h2>
+      <div class="flex-container">
+        <div id="flex-item"><a class="fas fa-envelope-square icons" style="color:red" href="mailto:ibpreethiba99@gmail.com"></a></div>
+        <div id="flex-item"><a class="fab fa-linkedin icons" style="color:indigo" href="https://www.linkedin.com/"></a></div>
+        <div id="flex-item"><a class="fab fa-github icons" style="color:black" href="https://github.com/Preethiba?tab=repositories"></a></div>
+      </div>
     </div>
   </div>
 </body>
