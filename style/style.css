@@ -8,7 +8,7 @@
 #navList{
 	padding-top: 20px;
 }
-#navList{
+#navList li{
 	display: inline;
 	list-style-type: none;
 	padding: 10px;
