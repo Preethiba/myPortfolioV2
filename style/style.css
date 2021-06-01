@@ -1,10 +1,6 @@
 * {
   box-sizing: border-box;
 }
-#root{
-	margin-left: 10px;
-	margin-right: 10px;
-}
 #navDiv{
 	background-color: grey;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -168,7 +164,7 @@
 }
 
 .card-image{
-	width: 100%;
+	width: 80%;
 	height: 250px;
 	padding: 10px;
 }
@@ -325,10 +321,6 @@
   #navList li{
 	display: inline;
 	padding: 10px;
-  }
-  .card{
-  	height: 400px;
-  	width: 400px;
   }
   #educationContent .alignleft{
 	position: relative;
